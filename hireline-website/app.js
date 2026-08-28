@@ -180,9 +180,9 @@ function seedIfNeeded() {
   // In a real product these would not exist  a live company would have
   // everyone register their own account (see the Register page).
   const users = [
-    { id: uid("user"), name: "Hansi Perera", email: "hr@hireline.test", password: "hr12345", role: "hr" },
-    { id: uid("user"), name: "Nimal Fernando", email: "interviewer@hireline.test", password: "interview123", role: "interviewer" },
-    { id: uid("user"), name: "Amanda Silva", email: "manager@hireline.test", password: "manager123", role: "manager" },
+    { id: uid("user"), name: "Hansi Perera", email: "hr@Altrium.test", password: "hr12345", role: "hr" },
+    { id: uid("user"), name: "Nimal Fernando", email: "interviewer@Altrium.test", password: "interview123", role: "interviewer" },
+    { id: uid("user"), name: "Amanda Silva", email: "manager@Altrium.test", password: "manager123", role: "manager" },
   ];
 
   save(KEYS.jobs, jobs);
@@ -398,7 +398,7 @@ function Navbar({ user, onLogout, navigate, page }) {
       <div className="navbar-inner">
         <a className="brand" onClick={() => navigate("home")}>
           <span className="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><path d="M4 12h16M4 12a2 2 0 100-4 2 2 0 000 4zM12 12a2 2 0 100-4 2 2 0 000 4zM20 12a2 2 0 100-4 2 2 0 000 4z"/></svg></span>
-          HireLine
+          Altrium
         </a>
         {isPublicNav && (
           <nav className="nav-links">
@@ -431,7 +431,7 @@ function Footer({ navigate }) {
         <div className="footer-brand">
           <div className="brand" style={{ marginBottom: 10 }}>
             <span className="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2"><path d="M4 12h16M4 12a2 2 0 100-4 2 2 0 000 4zM12 12a2 2 0 100-4 2 2 0 000 4zM20 12a2 2 0 100-4 2 2 0 000 4z"/></svg></span>
-            HireLine
+            Altrium
           </div>
           <p>A single, clear rail from first application to final offer  built so hiring teams and candidates always know exactly where things stand.</p>
         </div>
@@ -448,7 +448,7 @@ function Footer({ navigate }) {
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>© {new Date().getFullYear()} HireLine</span>
+        <span>© {new Date().getFullYear()} Altrium</span>
         <a onClick={() => { if (window.confirm("This erases all saved data (jobs, candidates, accounts, interviews) and restores the starting sample jobs. Continue?")) resetAllData(); }}>Reset demo data</a>
       </div>
     </footer>
@@ -514,9 +514,9 @@ function Home({ navigate }) {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <span className="eyebrow"><span className="eyebrow-dot"></span>HIRELINE · JOIN WITH US</span>
+            <span className="eyebrow"><span className="eyebrow-dot"></span>Altrium · JOIN WITH US</span>
             <h1>Hire with clarity, from first application to final offer.</h1>
-            <p className="lede">HireLine keeps job postings, candidates, interviews and hiring decisions on one rail  so HR, interviewers and hiring managers are always looking at the same picture.</p>
+            <p className="lede">Altrium keeps job postings, candidates, interviews and hiring decisions on one rail  so HR, interviewers and hiring managers are always looking at the same picture.</p>
             <div className="hero-ctas">
               <button className="btn btn-primary" onClick={() => navigate("careers")}>View open positions</button>
               <button className="btn btn-outline" onClick={() => navigate("about")}>How it works</button>
@@ -574,7 +574,7 @@ function Careers({ navigate }) {
       <div className="section-head">
         <div>
           <h2>Open Positions</h2>
-          <p className="sub">{jobs.length} role{jobs.length === 1 ? "" : "s"} open across HireLine. Apply directly  no account required.</p>
+          <p className="sub">{jobs.length} role{jobs.length === 1 ? "" : "s"} open across Altrium. Apply directly  no account required.</p>
         </div>
         {depts.length > 1 && (
           <label className="inline-filter">Department:
@@ -600,10 +600,10 @@ function Careers({ navigate }) {
 function About() {
   return (
     <div className="container page-section">
-      <span className="eyebrow"><span className="eyebrow-dot"></span>ABOUT HIRELINE</span>
+      <span className="eyebrow"><span className="eyebrow-dot"></span>ABOUT Altrium</span>
       <h2 style={{ fontSize: "2.1rem", maxWidth: "20ch" }}>One rail, from application to offer letter.</h2>
       <p style={{ maxWidth: "62ch", fontSize: "1.02rem" }}>
-        HireLine is a fictional company built for a university group project (COMP50074  Professional
+        Altrium is a fictional company built for a university group project (COMP50074  Professional
         Practice and Project Management). It's a recruitment &amp; hiring tracker: a single place for HR to
         post roles, for candidates to apply without creating an account, for interviewers to leave structured
         feedback, and for hiring managers to make the final call  all tracked along the same pipeline rail.
@@ -659,7 +659,7 @@ function Contact() {
         <div>
           <div className="contact-info-item">
             <div className="ic"><Icon.Mail /></div>
-            <div><h4>Email</h4><p>careers@hireline@gmail.com</p></div>
+            <div><h4>Email</h4><p>careers@Altrium@gmail.com</p></div>
           </div>
           <div className="contact-info-item">
             <div className="ic"><Icon.Phone /></div>
